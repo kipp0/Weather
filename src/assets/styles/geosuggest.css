@@ -1,0 +1,197 @@
+
+/**
+* The geosuggest module
+*/
+.geosuggest__input {
+  width: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0 0 1px rgba(56, 186, 116, 1);
+  padding: .5em 1em;
+  line-height: 1em;
+  
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+.geosuggest__input:focus {
+  border-bottom-color: #3d464d;
+  box-shadow: 0 0 0 transparent;
+}
+
+/**
+* A geosuggest item
+*/
+.geosuggest-item {
+  font-size: 18px;
+  font-size: 1rem;
+  padding: .5em .65em;
+  cursor: pointer;
+  color: #3d464d;
+}
+.geosuggest-item:hover,
+.geosuggest-item:focus {
+background: rgb(4, 15, 28);
+color: #fff;
+}
+.geosuggest-item--active {
+background: #05111a;
+color: #fff;
+}
+
+
+/**
+ * The geosuggest module
+ */
+.geosuggest {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  font-size: 18px;
+  font-size: 1rem;
+  position: relative;
+  width: 50%;
+  margin: 1em auto;
+  text-align: left;
+}
+
+.geosuggest__suggests {
+  /* color: #05111a; */
+  background-color: #3a4349 !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 25em;
+  padding: 20px;
+  margin-top: -1px;
+  background: #fff;
+  border-top-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  list-style: none;
+  z-index: 5;
+  -webkit-transition: all 0.2s, border 0.2s;
+          transition: all 0.2s, border 0.2s;
+}
+.geosuggest__suggests--hidden {
+  max-height: 0;
+  overflow: hidden;
+  border-width: 0;
+  padding: 0;
+
+}
+
+
+:focus::-webkit-input-placeholder {
+  -webkit-animation: move-left 1s ease-in-out;
+  animation: move-left 1s ease-in-out;
+  padding-right: 90%;
+}
+
+:focus:-moz-placeholder { /* Firefox 18- */
+  -moz-animation: move-left 1s ease-in-out;
+  animation: move-left 1s ease-in-out;
+  padding-right: 90%;
+}
+
+:focus::-moz-placeholder {  /* Firefox 19+ */
+  -moz-animation: move-left 1s ease-in-out;
+  animation: move-left 1s ease-in-out;
+  padding-right: 90%;
+}
+
+:hover:-ms-input-placeholder,
+:focus:-ms-input-placeholder {
+  -ms-animation: move-left 1s ease-in-out;
+  animation: move-left 1s ease-in-out;
+  padding-right: 90%;
+}
+
+
+/**
+* Resets
+*/
+::-webkit-input-placeholder {
+  text-align: center;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+}
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  
+}
+
+input:focus {
+  background-color: #3a4349;
+}
+input, select, button, textarea {
+  width: 70%;
+  font: inherit;
+  color: #fefefe;
+  background-color: #3d464d;
+}
+
+/**
+* Base
+*/
+Body {
+
+background-color: #3d464d;
+color: #fefefe;
+}
+html {
+font: 212.5%/1.2 "Roboto", Arial, sans-serif;
+font-weight: 300;
+-webkit-font-smoothing: antialiased;
+width: 100%;
+height: 100%;
+overflow: hidden-x;
+text-align: center;
+}
+
+
+.container {
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+max-width: 612px;
+max-width: 34rem;
+}
+h1 {
+font-size: 72px;
+font-size: 4rem;
+font-weight: 100;
+margin-bottom: .5em;
+color: rgba(56, 186, 116, .7);
+}
+
+@keyframes move-left {
+    0% {letter-spacing: normal;}
+    50% {letter-spacing: .1em;}
+    100% {letter-spacing: normal;}
+}

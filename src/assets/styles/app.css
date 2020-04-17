@@ -1,0 +1,14 @@
+body {
+	text-align: center;
+}
+
+table button {
+	display: flex;
+	border: none;
+	background-color: none;
+	width: 100%;
+}
+
+table button i{
+	color: rgba(186, 71, 56, 0.7);
+}

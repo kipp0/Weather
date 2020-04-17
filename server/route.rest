@@ -1,0 +1,14 @@
+GET http://localhost:54682/locations
+###
+
+# GET http://localhost:54682/locations/pickering
+###
+
+POST http://localhost:54682/locations
+Content-Type: application/json
+
+{
+	"name": "Ajax,Canada",
+	"temperature": -1,
+	"lastUpdated": 1581981095315
+}

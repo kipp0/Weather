@@ -1,0 +1,8 @@
+export const GET_FAILED = 'get/GET_FAILED'
+export const GET_SUCCESS = 'get/GET_SUCCESS'
+export const UPDATE_SUCCESS = 'get/UPDATE_SUCCESS'
+export const UPDATE_FAIL = 'get/UPDATE_FAIL'
+export const DELETE_SUCCESS = 'get/DELETE_SUCCESS'
+export const DELETE_FAIL = 'get/DELETE_FAIL'
+export const POST_FAILED = 'post/POST_FAILED'
+export const POST_SUCCESS = 'post/POST_SUCCESS'
